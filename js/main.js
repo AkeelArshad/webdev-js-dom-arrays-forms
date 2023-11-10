@@ -21,6 +21,8 @@
     document.querySelector(".green").addEventListener('click', function(ev){
         document.querySelector('body').setAttribute('class', "greenBack");
     })
-
+    document.querySelector(".reset").addEventListener('click', function(ev){
+        document.querySelector('body').removeAttribute('class');
+    })
     // End coding here
 })();
