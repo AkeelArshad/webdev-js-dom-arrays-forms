@@ -34,12 +34,17 @@
     let imageCounter = 0;
     console.dir(imageAr);
 
-    setInterval(chgImage, 2500);
+    setInterval(chgImage, 200);
 
     function chgImage() {
-        document.getElementById("myImages").setAttribute("src", imageAR[imageCounter]);
+        document.getElementById("myImages").setAttribute("src", imageAr[imageCounter]);
         imageCounter++;
+        if (imageCounter == imageAr.length){
+            imageCounter = 0;
+        }
     }
+  
+
 
     
     /*
