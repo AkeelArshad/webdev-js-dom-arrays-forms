@@ -23,7 +23,7 @@
         bodyElement.setAttribute("class", colourPicked)
     }
     
-    let imageAR = [
+    let imageAr = [
         'images/view1.jpg', 
         'images/view2.jpg', 
         'images/view3.jpg', 
