@@ -23,6 +23,24 @@
         bodyElement.setAttribute("class", colourPicked)
     }
     
+    let imageAR = [
+        'images/view1.jpg', 
+        'images/view2.jpg', 
+        'images/view3.jpg', 
+        'images/view4.jpg', 
+        'images/view5.jpg', 
+        'images/view6.jpg'
+    ];
+    let imageCounter = 0;
+    console.dir(imageAr);
+
+    setInterval(chgImage, 2500);
+
+    function chgImage() {
+        document.getElementById("myImages").setAttribute("src", imageAR[imageCounter]);
+        imageCounter++;
+    }
+
     
     /*
         document.querySelector(".red").addEventListener('click', function(ev) {
