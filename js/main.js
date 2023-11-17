@@ -10,6 +10,21 @@
         console.info("hi I was clicked");
     })
     
+
+    let colourButtons = document.querySelectorAll(".colPicker");
+    let bodyElement = document.querySelector("body");
+    console.dir(colourButtons);
+    for (let i=0; i < colourButtons.length; i++) {
+        colourButtons[i].addEventListener("click", chgColour)
+    }
+
+    function chgColour(ev) {
+        let colourPicked = ev.target.classList[0] + "Back"
+        bodyElement.setAttribute("class", colourPicked)
+    }
+    
+    
+    /*
         document.querySelector(".red").addEventListener('click', function(ev) {
         document.querySelector('body').setAttribute('class', "redBack");
     })
@@ -22,5 +37,6 @@
         document.querySelector(".reset").addEventListener('click', function(ev){
         document.querySelector('body').removeAttribute('class');
     })
+    */
     // End coding here
 })();
