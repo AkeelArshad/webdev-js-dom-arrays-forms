@@ -10,5 +10,16 @@
         console.info("hi I was clicked");
     })
     
+    document.querySelector(".red").addEventListener('click', function(ev) {
+        document.querySelector('body').setAttribute('class', "redBack");
+    })
+    document.querySelector(".blue").addEventListener('click', function(ev) {
+        document.querySelector('body').setAttribute('class', "blueBack");
+    })
+        document.querySelector(".green").addEventListener('click', function(ev) {
+        document.querySelector('body').setAttribute('class', "greenBack");
+    })
+
+
     // End coding here
 })();
